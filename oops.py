@@ -50,26 +50,84 @@
 
 # class employee():
 #     def __init__(self, name, age, salary):     //Hierarchical Inheritance
-# self.name = name
-# self.age = age
-# self.salary = salary
+#         self.name = name
+#         self.age = age
+#         self.salary = salary
  
 # class childemployee1(employee):
 # def __init__(self,name,age,salary):
-# self.name = name
-# self.age = age
-# self.salary = salary
+#       self.name = name
+#       self.age = age
+#       self.salary = salary
  
 # class childemployee2(employee):
 # def __init__(self, name, age, salary):
-# self.name = name
-# self.age = age
-# self.salary = salary
+#      self.name = name
+#      self.age = age
+#      self.salary = salary
 # emp1 = employee('harshit',22,1000)
 # emp2 = employee('arjun',23,2000)
  
 # print(emp1.age)
 # print(emp2.age)
 
+
+   #---------- Polymorphism-----------#
+#-------compile time----------#
+# class employee1():
+#     def name(self):
+#       print("Harshit is his name")    
+#     def salary(self):
+#             print("3000 is his salary")
+ 
+#     def age(self):
+#             print("22 is his age")
+ 
+# class employee2():
+#       def name(self):
+#             print("Rahul is his name")
+ 
+#       def salary(self):
+#             print("4000 is his salary")
+ 
+#       def age(self):
+#             print("23 is his age")
+ 
+# def func(obj):
+#       obj.name()
+#       obj.salary()
+#       obj.age()
+ 
+# obj_emp1 = employee1()
+# obj_emp2 = employee2()
+ 
+# func(obj_emp1)
+# func(obj_emp2)
+            
+
+# #------------Run time polymorphisum--#
+# class employee():
+#        def __init__(self,name,age,id,salary):  
+#             self.name = name
+#             self.age = age
+#             self.salary = salary
+#             self.id = id
+# def earn(self):
+#         pass
+ 
+# class childemployee1(employee):
+ 
+#    def earn(self):
+#       print("no money")
+ 
+# class childemployee2(employee):
+ 
+#    def earn(self):
+#        print("has money")
+ 
+# c = childemployee1
+# c.earn(employee)
+# d = childemployee2
+# d.earn(employee)
 
 
